@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | SpotOn</title>
-    <link rel="stylesheet" href="/CSS/about.css">
+    <title>Login | SpotOn</title>
+    <link rel="stylesheet" href="/CSS/login.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <script src="https://kit.fontawesome.com/6d8cc5f18e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,70 +19,33 @@
             </div>
             <nav>
                 <a href="/index.html">Home</a>
+                <a href="/about.html">How it works</a>
                 <a href="/owner.html">Rent out your space</a>
                 <a href="/help.html">Help</a>
-                <a href="/login.html"><span>Login</span></a>
                 <button class="btn"><a href="/signup.html"><span>Sign Up</span></a></button>
             </nav>
         </div>
     </header>
     <main>
-        <section class="about-hero">
-            <div class="about-hero-content">
-                <h2>About <span>SpotOn</span></h2>
-                <p>
-                    Making parking hassle-free, convenient, and accessible for everyone, everywhere.
+        <section class="login-section">
+            <div class="login-box">
+                <h2>Welcome Back!</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+                        <input type="text" id="username" name="username" required autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                    </div>
+                    <button type="submit" class="btn2">Sign In</button>
+                </form>
+                <p class="login-links">
+                    <a href="#">Forgot Password?</a> | 
+                    <a href="/signup.html">Create Account</a>
                 </p>
             </div>
-        </section>
-        <section class="about-overview">
-            <h3>Who We Are</h3>
-            <p>
-                SpotOn is committed to transforming how people find and rent parking spaces. Whether you're a driver looking for a reliable spot or a property owner wanting to maximize unused space, our platform connects you seamlessly and securely.
-            </p>
-        </section>
-        <section class="about-mission">
-            <div class="about-mission-content">
-                <div>
-                    <h3>Our Mission</h3>
-                    <p>
-                        To empower drivers and space owners by providing a simple, transparent, and efficient way to rent and manage parking spaces, reducing city congestion and making urban mobility smarter.
-                    </p>
-                </div>
-                <div>
-                    <h3>Our Vision</h3>
-                    <p>
-                        To be the leading platform for parking solutions, building smarter cities where parking is no longer a problem.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="about-team">
-            <h3>Meet the Team</h3>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="/images/team1.jpeg" alt="Team Member 1">
-                    <h4>Peviorgents Pimbirimano</h4>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="team-member">
-                    <img src="/images/team2.jpeg" alt="Team Member 2">
-                    <h4>Jane Doe</h4>
-                    <p>Lead Developer</p>
-                </div>
-                <div class="team-member">
-                    <img src="/images/team3.jpeg" alt="Team Member 3">
-                    <h4>John Smith</h4>
-                    <p>Operations Manager</p>
-                </div>
-            </div>
-        </section>
-        <section class="about-cta">
-            <h3>Join Us On Our Journey!</h3>
-            <p>
-                Ready to experience hassle-free parking or monetize your space? Sign up with SpotOn today!
-            </p>
-            <button class="btn2"><a href="/signup.html">Get Started</a></button>
         </section>
     </main>
     <footer id="footer">
@@ -136,5 +99,12 @@
             <br>
         </div>
     </footer>
+    <script>
+        // Optional: Prevent form submission for demo
+        document.querySelector('.login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Login functionality is not implemented yet.');
+        });
+    </script>
 </body>
 </html>
